@@ -1,0 +1,27 @@
+# The standard workflow configuration needs to include the name and conditions that trigger actions described in the file. 
+name: Nagarro DV : Phyton : CI
+
+# The On key specifies that the pipeline will be run on pushes and pulls to default branch.
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      # The Matrix option is used to specify the strategy to run the pipeline in different environments with different configurations.
+        python-version: [3.7, 3.8, 3.9]
+ 
+    steps:
+      # This action checks-out the repository under $GITHUB_WORKSPACE, so the workflow can access it.
+      - uses: actions/checkout@v3
+      
+      # Installs a version of Python and adds it to the PATH
+      - name: Set up Python ${{ matrix.python-version }}" 
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}" 
+ 
