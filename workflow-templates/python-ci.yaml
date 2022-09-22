@@ -37,8 +37,6 @@ jobs:
         # If there is a requiremnts file in the repo it will install the requirements
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       
-     # Linting
-     - name: Perform linting
-       uses: nagarro-dv/.github/workflows/python-linting.yml@main
-       
-       octo-org/example-repo/.github/workflows/workflow-A.yml@v1
+    # Linting
+    - name: Perform linting
+      uses: nagarro-dv/.github/workflows/python-linting.yml@main
