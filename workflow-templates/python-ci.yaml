@@ -39,4 +39,4 @@ jobs:
       
     # Linting
     - name: Perform linting
-      uses: nagarro-dv/.github/workflows/python-linting.yml@main
+      uses: nagarro-dv/python-linting@main
