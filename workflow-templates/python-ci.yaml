@@ -13,7 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       # The Matrix option is used to specify the strategy to run the pipeline in different environments with different configurations.
-      python-version: [3.7, 3.8, 3.9]
+      matrix:
+        python-version: [3.7, 3.8, 3.9]
       fail-fast: false
  
     steps:
