@@ -37,7 +37,8 @@ jobs:
         # If there is a requiremnts file in the repo it will install the requirements
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       
-    # Linting      
+    # Linting  
+    # Flake8 will check for obvious errors, bad code style and suspicious code constructs.
     - name: flake8 Lint
       uses: py-actions/flake8@v2
       
@@ -50,3 +51,8 @@ jobs:
       #   max-line-length: "100"
       #  path: "src"
       #  plugins: "flake8-bugbear==22.1.11 flake8-black"
+      
+    - name: Test with pytest
+      run: |
+        pytest --cov --cov-report=xml"
+ 
