@@ -37,6 +37,16 @@ jobs:
         # If there is a requiremnts file in the repo it will install the requirements
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       
-    # Linting
-    - name: Perform linting
-      uses: nagarro-dv/.github/workflows/python-linting.yml@main
+    # Linting      
+    - name: flake8 Lint
+      uses: py-actions/flake8@v2
+      
+      # With custom settings
+      #  https://github.com/marketplace/actions/python-flake8-lint
+      #
+      # with:
+      #   ignore: "F401"
+      #   exclude: "src/ignoreme.py"
+      #   max-line-length: "100"
+      #  path: "src"
+      #  plugins: "flake8-bugbear==22.1.11 flake8-black"
