@@ -1,5 +1,5 @@
 # The standard workflow configuration needs to include the name and conditions that trigger actions described in the file. 
-name: Nagarro DV : Phyton : CI
+name: phyton-ci
 
 # The On key specifies that the pipeline will be run on pushes and pulls to default branch.
 on:
