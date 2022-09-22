@@ -1,0 +1,8 @@
+{
+    "name": "Nagarro DV : Phyton : CI",
+    "description": "This is a starter workflow for python apps.",
+    "iconName": "python",
+    "categories": [
+        "Python"
+    ]
+}
