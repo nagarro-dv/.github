@@ -14,7 +14,7 @@ jobs:
     strategy:
       # The Matrix option is used to specify the strategy to run the pipeline in different environments with different configurations.
       python-version: [3.7, 3.8, 3.9]
-    fail-fast: false
+      fail-fast: false
  
     steps:
     # This action checks-out the repository under $GITHUB_WORKSPACE, so the workflow can access it.
