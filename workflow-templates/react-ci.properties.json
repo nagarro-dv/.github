@@ -3,6 +3,6 @@
     "description": "This is a starter workflow for react.js app.",
     "iconName": "react-ci",
     "categories": [
-        "React"
+        "JavaScript"
     ]
 }
