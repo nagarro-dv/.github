@@ -3,6 +3,6 @@
     "description": "This is a starter workflow called Hello World",
     "iconName": "hello-ci",
     "categories": [
-        "Hello"
+        "Bash"
     ]
 }
