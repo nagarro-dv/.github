@@ -1,1 +1,8 @@
-
+{
+    "name": "Nagarro DV : React.js",
+    "description": "This is a starter workflow for react.js app.",
+    "iconName": "react",
+    "categories": [
+        "React"
+    ]
+}
